@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import SocialPill from "../icons/SocialPill.astro";
+import MailIcon from "../icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../icons/Briefcase.astro";
+---
+
+<Layout
+  title="Portafolio de Edwin Flores - Ingeniero de Sistemas, desarrollador y programador web y backend"
+  description="Contrata a Edwin Flores para crear tu aplicación web tanto en back end como front end"
+>
+  <main>
+    <SectionContainer class="py-44 pb-24">
+      <h1
+        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-4"
+      >
+        Hola! Soy Edwin Flores
+        <a
+          href="https://www.linkedin.com/in/edwin-flores-sanchez-44623a214/"
+          class="flex justify-center items-center"
+          target="_blank"
+          rel="noopener"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span class="opacity-80"
+          >Estudiante de 7mo ciclo en <span class="text-skyblue-100/90"
+            >Ingeniería de sistemas.</span
+          ></span
+        >
+        <span class="text-red-100/90"> De Lima, Perú.</span>
+        <span class="text-yellow-50 opacity-85">
+          He podido adquirir el manejo de diversas tecnologías mediante
+          prácticas preprofesionales y aprendizaje autónomo 🤓
+        </span>
+      </h2>
+
+      <nav class="flex gap-x-3 mt-8">
+        <SocialPill
+          href="https://www.linkedin.com/in/edwin-flores-sanchez-44623a214/"
+        >
+          <LinkedinIcon class="w-6 h-6" />
+           LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/EdwinFlores19">
+          <GitHubIcon class="w-6 h-6" />
+           GitHub
+        </SocialPill>
+        <SocialPill
+          href="mailto:ejuniorfloress@gmail.com?subject=Asunto%3A%20&body=Buenos%20d%C3%ADas"
+        >
+          <MailIcon class="w-6 h-6" />
+           ejuniorfloress@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="txt-2xl font-semibold mb-6 flex gap-x-2 items-center">
+        <Briefcase class="size-7" />
+         Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+  </main>
+</Layout>
